@@ -1,0 +1,14 @@
+WIDTH = 500
+HEIGHT = 500
+SIZE = (WIDTH, HEIGHT)
+
+ def lose_menu():
+        screen.fill(BLACK)
+
+        lose_screen = font.render("You have been SLAMMED!!!", True, WHITE)
+        try_again = font.render("Press ENTER to start", True, WHITE)
+
+        screen.blit(lose_screen, (WIDTH // 2 - lose_screen.get_width() // 2, 100))
+        screen.blit(try_again, (WIDTH // 2 - try_again.get_width() // 2, 300))
+
+        pygame.display.flip()
